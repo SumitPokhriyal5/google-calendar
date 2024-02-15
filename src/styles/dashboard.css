@@ -1,0 +1,103 @@
+.calendar {
+    display: flex;
+    width: 100%; 
+  }
+  
+  .time-slots {
+    border-right: 1px solid #ccc;
+    width: 100%;
+  }
+  
+  .time-slot {
+    font-family: arial;
+    opacity: 0.7;
+    height: 50px;
+    display: flex;
+    align-items: start;
+    gap: 10px;
+  }
+.time-slot > p {
+    display: flex;
+    width: 20%;
+    margin: 0;
+    justify-content: end;
+}
+  
+  
+  .events {
+    flex: 5;
+    padding: 5px;
+  }
+  
+  .eventsContainer {
+    width: 80%;
+    height: 100%;
+    margin-bottom: 5px;
+    position: relative;
+  }
+  .eventsContainer > hr{
+    position: absolute;
+    top: 1%;
+    width: 100%;
+    z-index: 0;
+  }
+
+  .event {
+    z-index: 999;
+    border-radius: 10px;
+    display: flex;
+    gap: 5px;
+    height: 15px;
+    align-items: center;
+    padding-left: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    /* border: 1px solid red; */
+  }
+  
+  .current-time-line {
+    position: absolute;
+    top: 1%;
+    width: 100%;
+    border: 1px solid red; 
+  }
+
+  /* Modal container */
+.modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+  }
+  
+  /* Modal content */
+  .modal-content {
+    background-color: #fefefe;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
+    max-width: 400px;
+  }
+  .modal-content > p > span {
+    font-weight: 600;
+  }
+  /* Close button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
